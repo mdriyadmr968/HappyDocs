@@ -1,0 +1,17 @@
+.carousel-image{
+    filter: brightness(40%);
+}
+.carousel-caption {
+  width: 40%;
+  margin: auto;
+  position: absolute;
+  top: 215px;
+}
+.carousel-caption h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.carousel-caption p {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
