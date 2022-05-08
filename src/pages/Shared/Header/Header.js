@@ -1,20 +1,55 @@
 import React from "react";
-import { getAuth, signOut } from 'firebase/auth';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
-import app from '../../../firebase.init'
+import { getAuth, signOut } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { Link } from "react-router-dom";
+import app from "../../../firebase.init";
+import { useNavigate } from "react-router-dom";
+import "./Header.css";
 
 const auth = getAuth(app);
 
 const Header = () => {
   const [user] = useAuthState(auth);
+  const navigate = useNavigate();
   return (
     <div>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/details">Details</Link>
-        <Link to="/contact">Orders</Link>
-        <Link to="/register">Register</Link>
+      <header class="header">
+        <a href="" class="logo">
+          HappyDoc
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+          <span class="navicon"></span>
+        </label>
+        <ul class="menu">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/services">Services</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/register">Register</Link>
+          </li>
+          <li>
+            <a href="">
+              {user?.uid ? (
+                <button onClick={() => signOut(auth)}>sign out</button>
+              ) : (
+                <button onClick={() => navigate("/login")}>Login</button>
+              )}
+            </a>
+          </li>
+        </ul>
+      </header>
+
+      {/* ----------------------------------------------------------
+      ---------------------------------------------------------- */}
+
+      {/* <nav>
         {user && (
           <>
             <Link to="/vip">VIP</Link>
@@ -27,7 +62,7 @@ const Header = () => {
         ) : (
           <Link to="/login">Login</Link>
         )}
-      </nav>
+      </nav> */}
     </div>
   );
 };
