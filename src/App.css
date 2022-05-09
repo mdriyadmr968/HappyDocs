@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+/* Font family for whole website */
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+  
+
+}

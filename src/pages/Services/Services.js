@@ -13,12 +13,12 @@ const Services = () => {
       .then((data) => setServ(data));
   }, []);
   return (
-    <div style={{ backgroundColor : "whitesmoke"}}>
-      <h1 className="text-center ourservice">Our Services</h1>
+    <div style={{ backgroundColor : "whitesmoke", paddingBottom:"10%"}}>
+      <h1 className="text-center ourservice ">Our Services</h1>
       <Container className="">
-        <Row>
+        <Row className='gy-5'>
           {serv.map((service) => (
-            <Col xs={12} md={4}>
+            <Col xs={12} sm={12} md={4} >
               <Service service={service} key={service.name}></Service>
             </Col>
           ))}

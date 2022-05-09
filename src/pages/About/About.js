@@ -10,6 +10,7 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import ButtonBase from "@mui/material/ButtonBase";
 import { AlignHorizontalLeft } from "@mui/icons-material";
+import './About.css'
 
 const Img = styled("img")({
   margin: "auto",
@@ -72,7 +73,10 @@ export default function BasicTabs() {
       >
         <Grid container spacing={2}>
           <Grid item>
-            <ButtonBase sx={{ width: 300, height: 400 }}>
+            <ButtonBase
+              className="about-image"
+              sx={{ width: 300, height: 400 }}
+            >
               <Img alt="complex" src={aboutPic} />
             </ButtonBase>
           </Grid>
@@ -82,7 +86,9 @@ export default function BasicTabs() {
                 <Box className="tab-container">
                   <Box sx={{ width: "60%", margin: "auto" }}>
                     <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-                      <Typography variant="h5" sx={{ marginTop: "15%"}}>About Us</Typography>
+                      <Typography variant="h5" sx={{ marginTop: "15%" }}>
+                        About Us
+                      </Typography>
                       <Tabs
                         value={value}
                         onChange={handleChange}

@@ -8,7 +8,7 @@ const Service = ({ service }) => {
 
   return (
     <div >
-      <Card  className="card-container" style={{ width: "18rem", height: "25rem", margin: "5%" }}>
+      <Card  className="card-container" style={{ width: "18rem", height: "25rem", margin: "auto" }}>
         <Card.Img className="card-img" variant="top" src={img} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>

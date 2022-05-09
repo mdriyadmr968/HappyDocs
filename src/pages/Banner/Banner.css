@@ -15,3 +15,17 @@
   font-weight: 500;
   font-size: 1.2rem;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .carousel-caption h1 {
+    font-size: 1.2rem;
+    margin:-100px;
+  }
+  .carousel-caption p {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 60%;
+
+}
+}
