@@ -82,7 +82,7 @@ export default function BasicTabs() {
                 <Box className="tab-container">
                   <Box sx={{ width: "60%", margin: "auto" }}>
                     <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-                      <Typography variant="h5">About Us</Typography>
+                      <Typography variant="h5" sx={{ marginTop: "15%"}}>About Us</Typography>
                       <Tabs
                         value={value}
                         onChange={handleChange}

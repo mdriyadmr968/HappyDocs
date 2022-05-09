@@ -13,9 +13,9 @@ const Services = () => {
       .then((data) => setServ(data));
   }, []);
   return (
-    <div>
-      <h1 className="text-center mt-5">Our Services</h1>
-      <Container>
+    <div style={{ backgroundColor : "whitesmoke"}}>
+      <h1 className="text-center ourservice">Our Services</h1>
+      <Container className="">
         <Row>
           {serv.map((service) => (
             <Col xs={12} md={4}>

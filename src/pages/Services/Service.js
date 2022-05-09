@@ -1,21 +1,22 @@
-
-import React from 'react';
+import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import './Services.css'
+import "./Services.css";
 
 const Service = ({ service }) => {
-  const { name, img, id } = service;
+  const { name, img, id, description } = service;
 
   return (
-    <div>
-      <Card style={{ width: "18rem", height:"20rem", margin: "5%"}}>
-        <Card.Img variant="top" src={img}  />
+    <div >
+      <Card  className="card-container" style={{ width: "18rem", height: "25rem", margin: "5%" }}>
+        <Card.Img className="card-img" variant="top" src={img} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
-
+          <p className="card-description">{description}</p>
           <Link to={`/details/${id}`}>
-            <button className=" btn btn-primary">Read More</button>
+            <button type="button" class="btn btn-warning">
+              Read More
+            </button>
           </Link>
         </Card.Body>
       </Card>

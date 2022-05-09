@@ -1,0 +1,41 @@
+.client-div{
+    margin-bottom: 5%;
+}
+.ClientsSay-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.cards {
+  line-height: 1.6;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0px;
+}
+.cards p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.cards:hover {
+  /* background-color: #43c4d8; */
+   background: linear-gradient(#eecda3,  #ef629f);
+}
+.client-image {
+  width: 35%;
+  border-radius: 50%;
+  margin-top: -25%;
+}
+.horizontal-row {
+  text-align: left;
+  width: 40px;
+  /* height: 5px !important; */
+  border-top: 4px solid #43c4d8;
+}
+.all-card{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+
+
+}

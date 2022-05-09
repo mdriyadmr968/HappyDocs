@@ -25,7 +25,7 @@ const Register = () => {
     });
   };
     return (
-      <div>
+      <div className="register-container">
         <h2>register</h2>
         <div className="form">
           <div className="form-body">
@@ -87,7 +87,7 @@ const Register = () => {
             </div>
           </div>
           <div class="footer">
-            <button type="submit" class="btn">
+            <button  class="btn btn-warning" type="submit" class="btn">
               Register
             </button>
           </div>
@@ -96,7 +96,13 @@ const Register = () => {
           already have an account? <a href="/login">Login</a>
         </p>
         <div>------------ or ------------</div>
-        <button onClick={handleGoogleSignIn}>Google Signin</button>
+        <button
+          type="button"
+          class="btn btn-warning"
+          onClick={handleGoogleSignIn}
+        >
+          Google Signin
+        </button>
       </div>
     );
 };

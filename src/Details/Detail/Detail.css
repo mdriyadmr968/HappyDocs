@@ -1,0 +1,12 @@
+.detailRow {
+    padding-top: 10%;
+    /* padding-left: 8%; */
+}
+.detailcontainer {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+.detailImage{
+    width: 60%;
+}

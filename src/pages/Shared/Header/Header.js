@@ -37,9 +37,21 @@ const Header = () => {
           <li>
             <a href="">
               {user?.uid ? (
-                <button onClick={() => signOut(auth)}>sign out</button>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  onClick={() => signOut(auth)}
+                >
+                  sign out
+                </button>
               ) : (
-                <button onClick={() => navigate("/login")}>Login</button>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  onClick={() => navigate("/login")}
+                >
+                  Login
+                </button>
               )}
             </a>
           </li>

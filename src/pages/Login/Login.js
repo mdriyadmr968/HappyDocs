@@ -32,10 +32,16 @@ const Login = () => {
      });
    };
   return (
-    <div>
+    <div className="login-container">
       <h3>Please Login</h3>
       <div style={{ margin: "20px" }}>
-        <button onClick={handleGoogleSignIn}>Google Sign In</button>
+        <button
+          type="button"
+          class="btn btn-warning"
+          onClick={handleGoogleSignIn}
+        >
+          Google Sign In
+        </button>
       </div>
 
       <div className="Login">
@@ -57,7 +63,7 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
-          <Button block size="lg" type="submit" disabled={!validateForm()}>
+          <Button type="button" class="btn btn-warning" block size="lg" type="submit" disabled={!validateForm()}>
             Login
           </Button>
         </Form>
