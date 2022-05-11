@@ -57,24 +57,6 @@ const Header = () => {
           </li>
         </ul>
       </header>
-
-      {/* ----------------------------------------------------------
-      ---------------------------------------------------------- */}
-
-      {/* <nav>
-        {user && (
-          <>
-            <Link to="/vip">VIP</Link>
-          </>
-        )}
-
-        <span>{user?.displayName && user.displayName} </span>
-        {user?.uid ? (
-          <button onClick={() => signOut(auth)}>sign out</button>
-        ) : (
-          <Link to="/login">Login</Link>
-        )}
-      </nav> */}
     </div>
   );
 };
