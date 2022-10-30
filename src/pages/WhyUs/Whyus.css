@@ -1,0 +1,53 @@
+.whyus-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+.whyus-card {
+  width: 30%;
+  display: flex;
+  margin-bottom: 1%;
+}
+.whyus-card-left {
+  width: 20%;
+}
+.whyus-card-right {
+  width: 70%;
+  text-align: left;
+  margin: auto;
+}
+.whyus-card-right h4 {
+  color: #081340;
+  font-size: 18px;
+  font-weight: 600;
+}
+.whyus-card-right p {
+  color: #767676;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.whyus-icon {
+  width: 40%;
+  font-size: 2rem;
+  color: #ee163b;
+}
+
+@media only screen and (max-width: 600px) {
+  .whyus-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+  }
+  .whyus-card {
+    width: 40%;
+    display: flex;
+    margin:0 auto 5%;
+  }
+}

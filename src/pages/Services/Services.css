@@ -3,17 +3,55 @@
 }
 
 .card-container {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-
-
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
-.card-img{
+.card-img {
   height: 40%;
 }
 .ourservice {
   padding-top: 7%;
   padding-bottom: 5%;
+}
+.our {
+  color: #081340;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.dna {
+  transform: rotate(90deg);
+  font-size: 1.5rem;
+}
+.service-des {
+  width: 50%;
+  margin: auto;
+  color: #767676;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.services {
+  color: #ee163b;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 38px;
+}
 
+.service-card-body {
+  background-color: #ee163b;
+}
+.service-card-title {
+  font-weight: 600 !important;
+  font-size: 20px;
+  color: #ffffff;
+}
+.card-description {
+  font-weight: 400 !important;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
 }
 .description {
   text-align: left;
@@ -23,5 +61,3 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
-

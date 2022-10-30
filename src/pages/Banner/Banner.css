@@ -1,5 +1,8 @@
-.carousel-image{
-    filter: brightness(40%);
+.Carousel-container {
+  z-index: -1;
+}
+.carousel-image {
+  filter: brightness(40%);
 }
 .carousel-caption {
   width: 40%;
@@ -16,16 +19,60 @@
   font-size: 1.2rem;
 }
 
-
 @media only screen and (max-width: 600px) {
   .carousel-caption h1 {
     font-size: 1.2rem;
-    margin:-100px;
+    margin: -100px;
   }
   .carousel-caption p {
-  font-weight: 500;
-  font-size: 1rem;
-  margin-top: 60%;
-
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 60%;
+  }
 }
+
+.banner-bottom-container {
+  width: 90%;
+  display: flex;
+  z-index: 100;
+  margin: -5% auto 0;
+}
+.banner-bottom-card{
+  display: flex;
+  flex-direction: row;
+  width: 33%;
+  padding: 2%;
+  background-color: #ee163b;
+}
+.banner-bottom-card2 {
+  display: flex;
+  flex-direction: row;
+  width: 33%;
+  padding: 2%;
+  background-color: #0B4575;
+}
+.banner-bottom-cards-icon {
+  width: 40%;
+  font-size: 2.5rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-service-header {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  margin: auto;
+  color: #ffffff;
+  padding: 4%;
+}
+.banner-service-discription {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #ffffff;
+  text-align: left;
+  margin: auto;
 }

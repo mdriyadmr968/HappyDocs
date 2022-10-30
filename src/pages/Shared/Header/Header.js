@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div>
       <header class="header">
-        <a href="" class="logo">
+        <a href="/" class="logo">
           HappyDoc
         </a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />

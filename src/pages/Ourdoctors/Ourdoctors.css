@@ -1,0 +1,11 @@
+.doctors-cards{
+    text-align: left;
+    width: 80%;
+    margin: auto;
+}
+.doc-icon{
+    color: #C30E2D;
+    font-size: 1.5rem;
+    padding-right: 5%;
+
+}

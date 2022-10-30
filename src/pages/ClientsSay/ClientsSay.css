@@ -1,6 +1,7 @@
 .client-div{
-    margin-bottom: 5%;
+    margin: auto;
     background-color: rgb(247, 248, 249);
+    padding-bottom: 5%;
 }
 .ClientsSay-container {
   width: 80%;
@@ -33,12 +34,16 @@
   border-top: 4px solid #43c4d8;
 }
 .all-card{
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-around;
 
 
+}
+.card-text{
+  line-height: 35px;
+  text-align: left;
 }
 @media only screen and (max-width: 600px) {
   .all-card {

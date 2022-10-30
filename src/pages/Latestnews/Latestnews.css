@@ -1,0 +1,10 @@
+.blogs-cards{
+    width: 80%;
+    margin: auto;
+}
+.blogs-card{
+    text-align: left;
+}
+.arrow{
+    color: red;
+}
